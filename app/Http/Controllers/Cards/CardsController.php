@@ -3,21 +3,21 @@
 namespace App\Http\Controllers\Cards;
 
 use App\Http\Controllers\Controller;
-use App\Services\Cards\CardService;
+use App\Services\Cards\CardsService;
 use Illuminate\Http\Request;
 
 class CardsController extends Controller
 {
-    public CardService $cardService;
+    public CardsService $cardsService;
 
-    public function __construct(CardService $cardService)
+    public function __construct(CardsService $cardsService)
     {
-        $this->cardService = $cardService;
+        $this->cardsService = $cardsService;
     }
 
-    public function list($id)
+    public function list()
     {
-        $card=$this->cardService->get($id);
-        return $card;
+        $cards=$this->cardsService->list();
+        return $cards;  
     }
 }

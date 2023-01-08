@@ -7,6 +7,7 @@
             <p>Piotr Franc</p>
             <h6>Poznań</h6>
             <Socials/>
+            <br>
             <Card/>
         </div>
     </div>

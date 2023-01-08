@@ -1,3 +1,4 @@
+
 .photobox{
     width:150px;
     height:150px;
@@ -15,20 +16,18 @@
 }
 
 .info{
-    float:left;
     text-align:center;
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 200%;
+    font-size: 150%;
     color:black;
     padding:10%;
 }
 
 .aboutme{
-    width: 40%;
-    height: 30%;
+    width: 60%;
+    height: 90%;
     opacity: 1;
     margin: 10% auto;
-    margin-bottom: 15%;
     text-align: center;
     border: 1px solid black;
     border-radius: 5%;
@@ -41,7 +40,7 @@
     background-color: #ffffff;
     padding: 0;
     width: 100vw;
-    height: 250vh;
+    height: 200vh;
 }
 
 .socials{

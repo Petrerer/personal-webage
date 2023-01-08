@@ -21,6 +21,12 @@ class CardService
 
     public function destroy($id)
     {
-        return $this->cardModel->destroy($id);
+        $this->cardModel->destroy($id);
     }
+    
+    public function create($card)
+    {
+        $this->cardModel::create($card);
+    }
+    
 }

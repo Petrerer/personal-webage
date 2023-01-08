@@ -22,6 +22,14 @@ class CardController extends Controller
 
     public function destroy($id){
         $this->cardService->destroy($id);
-        return response();
+        return response("OK");
+    }
+
+    public function create(Request $request){
+        $card["name"]=$request["name"];
+        $card["type"]=$request["type"];
+        $card["quantity"]=$request["quantity"];
+        $this->cardService->create($card);
+        return response("OK");
     }
 }

@@ -9,5 +9,5 @@ class Card extends Model
 {
     use HasFactory;
 
-    public $fillable = ['name', 'release'];
+    public $fillable = ['name', 'type','quantity'];
 }
